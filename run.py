@@ -18,7 +18,8 @@ df = pd.read_excel(file_path)
 # Clean column names
 df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('(', '').str.replace(')', '').str.replace('.', '_')
 
-targets = ['Oeil_directeur', 'Groupe_niveau_actuel', 'Poste_jeu', 'Groupe_Poste', "Poste_Niveau","Poste_Sexe","Poste_Oeil","Sexe_Niveau","Oeil_Niveau","Oeil_Sexe"]
+# targets = ['Oeil_directeur', 'Groupe_niveau_actuel', 'Poste_jeu', 'Groupe_Poste', "Poste_Niveau","Poste_Sexe","Poste_Oeil","Sexe_Niveau","Oeil_Niveau","Oeil_Sexe"]
+targets = ['Sexe', 'Groupe_niveau_actuel']
 
 for target in targets:
     try:
